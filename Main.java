@@ -1,39 +1,6 @@
 package db;
 /*
-import java.sql.*;
-public class main {
-    public static void main (String[] args) {
-        String url = "jdbc:mysql://localhost/experiment";
-        String username = "root";
-        String password = "12345";
 
-        try (Connection connection = DriverManager.getConnection(url, username, password)) {
-            // Создаем Statement для выполнения SQL-запросов
-            Statement statement = connection.createStatement();
-
-            // Выполняем запрос для таблицы "химические пробы"
-            ResultSet chemicalSamplesResultSet = statement.executeQuery("SELECT * FROM chemical_samples");
-            System.out.println("Таблица \"Химические пробы\":");
-            while (chemicalSamplesResultSet.next()) {
-               // int id = chemicalSamplesResultSet.getInt("id");
-                String name = chemicalSamplesResultSet.getString("name");
-                int quantity = chemicalSamplesResultSet.getInt("quantity");
-                System.out.println(name + ", Количество: " + quantity);
-            }
-
-            // Выполняем запрос для таблицы "бригады"
-            ResultSet crewsResultSet = statement.executeQuery("SELECT * FROM crews");
-            System.out.println("\nТаблица \"Бригады\":");
-            while (crewsResultSet.next()) {
-                //int id = crewsResultSet.getInt("id");
-                String name = crewsResultSet.getString("name");
-                int members = crewsResultSet.getInt("members");
-                System.out.println(name + ", Количество участников: " + members);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
 }
 
 */
