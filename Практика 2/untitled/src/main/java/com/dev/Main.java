@@ -14,7 +14,7 @@ public class Main {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
-// Ваш код работы с сессией Hibernate
+
         class ChemicalSample {
             @Id
             @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -56,7 +56,7 @@ public class Main {
             default List<Crew> findAll() {
                 return null;
             }
-            // additional methods if needed
+            
         }
 
         class MainApplication {
@@ -71,20 +71,20 @@ public class Main {
                 // Получаем список объектов ChemicalSample из БД
                 List<ChemicalSample> chemicalSamples = chemicalSampleRepository.findAll();
 
-                // Выводим на консоль список объектов ChemicalSample
+                
                 for (ChemicalSample chemicalSample : chemicalSamples) {
                     System.out.println(chemicalSample.getName());
                 }
 
-                // Получаем список объектов Crew из БД
+                
                 List<Crew> crews = crewRepository.findAll();
 
-                // Выводим на консоль список объектов Crew
+               
                 for (Crew crew : crews) {
                     System.out.println(crew.getName());
                 }
 
-                // Закрываем фабрику сессий
+                
                 entityManagerFactory.close();
             }
         }
